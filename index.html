@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Camp Attendance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🤖 AI Camp Attendance</h1>
+
+  <button onclick="startCamera()">Start Camera</button>
+
+  <div id="camera"></div>
+
+  <h2 id="result">Waiting...</h2>
+
+  <h3>Today's Attendance</h3>
+  <ul id="list"></ul>
+
+  <button onclick="exportCSV()">Export CSV</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
