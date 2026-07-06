@@ -15,7 +15,7 @@ async function startCamera() {
 
     webcam = new tmImage.Webcam(300, 300, true);
 
-    await webcam.setup(); // 這裡會跳允許鏡頭
+    await webcam.setup();
     await webcam.play();
 
     document.getElementById("camera").innerHTML = "";
@@ -24,8 +24,8 @@ async function startCamera() {
     window.requestAnimationFrame(loop);
 
   } catch (err) {
-    console.error("ERROR:", err);
-    alert("Camera or Model failed to load. Check console.");
+    console.error(err);
+    alert("Model or Camera failed. Please check console (F12).");
   }
 }
 
